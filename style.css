@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 35vh 40vh;
+  width: 55%;
+  height: 65vh;
+  margin: auto;
+  margin-top: 50px;
+
+}
+.divone {
+  grid-column: span 2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+.divtwo {
+  background-color: hsl(179, 62%, 43%);
+  padding: 40px;
+  border-radius: 0px 0px 0px 10px;
+}
+.divthree {
+  background-color: hsl(178, 99%, 42%);
+  padding: 40px;
+  border-radius: 0px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+
+}
+.divone h2 {
+  color: hsl(179, 62%, 43%);
+}
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.divone article p:first-child {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 18px;
+}
+.divone article p:last-child {
+  color: hsl(218, 22%, 67%);
+}
+.divtwo p:first-child {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.prix {
+  display: flex;
+  gap: 18px;
+}
+.prix p:first-child {
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  font-size: 30px;
+}
+.prix p:last-child {
+  color: gainsboro;
+  font-weight: 500;
+  align-self: center;
+  height: 6vh;
+}
+.sing p:first-child {
+  color: hsl(204, 43%, 93%);
+  font-size: 18px;
+  font-weight: 400;
+}
+.sing a {
+  display: block;
+  background-color: hsl(71, 73%, 54%);
+  padding: 15px;
+  width: 95%;
+  text-align: center;
+  text-decoration: none;
+  color: hsl(204, 43%, 93%);
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1px hsl(218, 22%, 67%);
+}
+.divthree p:first-child{
+    color: hsl(204, 43%, 93%);
+    font-weight: 600;
+    font-size: 19px;
+}
+.divthree p:last-child{
+    color: hsl(204, 43%, 93%);
+    width: 75%;
+    line-height: 23px;
+}
+@media screen and (max-width:375px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 10px;
+    }
+    .divtwo{
+        border-radius: 0;
+    }
+    .divthree{
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+}
